@@ -19,28 +19,41 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            font-style: italic;
         }
         main{
-            text-align: center;
+            text-align: left;
             font-size: large;
             max-width: 1000px;
             margin: 0 auto;
             padding: 15px;
+            display: flex-grow;
+            gap: 20px;
+            align-items: flex-start;
         }
+        main > div{
+    flex: 1;
+    min-width: 0;}
         img{
-            max-width: 1330px;
-            margin: 0 auto;
-            
+            width: 300px;
+            height:auto;
+            flex-shrink: 0;
+        }
+        .autor{
+font-style: oblique;
+font-weight: bolder;
         }
     </style>
 </head>
 <body>
   <header>
-    <h1>`Odisséia`</h1>
-    <p>`por: Kauan Maria`</p>
+    <h1>Odisséia</h1>
 </header>
 
 <main>
+<img src="Odisseu1.jpeg" alt="imagem do começo">
+<div>
+<p class="autor">por: Kauan Maria</p>
 <p>Um dos mais clássicos livros da história, atribuido a Homero e sequência de "Íliada". É um dos primogênitos de seu gênero, o poema épico cheio jornadas heróicas, criaturas míticas e aventuras.</p>
 <p>Segue Odisseu, também conhecido com Ulisses, em sua jonada de volta para a ilha de Ítaca, sua terra natal, após o final da Guerra de Tróia.</p>
 <p>Embora a guerra tenha terminado, Odisseu leva dez anos para voltar para casa. Durante a viagem, enfrenta vários desafios, como um Ciclope, a feiticeira Circe, Sereias, além de alguns monstros marinhos e tempestades enviadas por Poseidon, em busca de vingança contra Odisseu.</p>
@@ -49,8 +62,17 @@
 <p>Com a ajuda da deusa Atena, Odisseu finalmente consegue retornar disfarçado. Ao chegar, testa a lealdade de seus aliados, revela sua identidade e derrota os pretendentes que ocupavam seu palácio. No fim, reencontra Penélope e recupera seu reino.</p>
 <p>Recentemente, em 16 julho de 2026, teve seu lançamento nos cinemas brasileiros com um filme de aproximadamente 2 horas e 50 minutos.</p>
 <p>É um dos necessários de ter em sua estante se quer começar a entrar no mundo dos clássicos.</p>
+<button>ゴᯓ★ <span>0</span></button>
+</div>
 </main>
-<img src="Odisseu1.jpeg" alt="imagem do fim">
 </body>
-
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado(){
+    console.log("Clicado");
+    let texto = botao.querySelector("span");
+    texto.textContent++;
+}
+</script>
 </html>
