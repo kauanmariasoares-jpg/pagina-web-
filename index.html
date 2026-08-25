@@ -5,74 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Jornadada</title>
+    <title>Jornada</title>
     <style>
-        body{
-        background-color: rgba(0, 68, 132, 0.982); 
-        color: #FFFFFF;
-        border: 10px solid rgba(255,0,0,0.988);
+        body {
+            background-color: rgba(0, 68, 132, 0.982);
+            color: #FFFFFF;
+            border: 10px solid rgba(255, 0, 0, 0.988);
         }
-        header{
+
+        header {
             text-align: center;
-            text-decoration: overline;
             font-size: x-large;
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             font-style: italic;
+            font-weight: bolder;
         }
-        main{
+
+        main {
             text-align: left;
             font-size: large;
             max-width: 1000px;
             margin: 0 auto;
             padding: 15px;
-            display: flex-grow;
-            gap: 20px;
-            align-items: flex-start;
+            overflow: auto;
         }
-        main > div{
-    flex: 1;
-    min-width: 0;}
-        img{
-            width: 300px;
-            height:auto;
-            flex-shrink: 0;
+
+        img {
+            width: 600px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
         }
-        .autor{
-font-style: oblique;
-font-weight: bolder;
+
+        .autor {
+            font-style: oblique;
+            font-weight: bolder;
+        }
+
+        .botaoS1 {
+            background-color: rgb(255, 220, 25);
+        }
+
+        .botaoS2 {
+            background-color: blueviolet;
+            color: white;
         }
     </style>
 </head>
-<body>
-  <header>
-    <h1>Odisséia</h1>
-</header>
 
-<main>
-<img src="Odisseu1.jpeg" alt="imagem do começo">
-<div>
-<p class="autor">por: Kauan Maria</p>
-<p>Um dos mais clássicos livros da história, atribuido a Homero e sequência de "Íliada". É um dos primogênitos de seu gênero, o poema épico cheio jornadas heróicas, criaturas míticas e aventuras.</p>
-<p>Segue Odisseu, também conhecido com Ulisses, em sua jonada de volta para a ilha de Ítaca, sua terra natal, após o final da Guerra de Tróia.</p>
-<p>Embora a guerra tenha terminado, Odisseu leva dez anos para voltar para casa. Durante a viagem, enfrenta vários desafios, como um Ciclope, a feiticeira Circe, Sereias, além de alguns monstros marinhos e tempestades enviadas por Poseidon, em busca de vingança contra Odisseu.</p>
-<p>Ao mesmo tempo da jornada, em Ítaca, acompanhamos Penélope, esposa de Odisseu, e sua luta interna entre seguir em frente, escolhendo uns dos diversos novos pretendentes que acreditam que Odisseu está morto ou acreditar na volta dele, mesmo após de quase doze anos de sua partida para a Guerra de Tróia.</p>
-<p>Também vemos Telêmaco, filho de Odisseu e Penélope, saindo em uma jornada para encontrar seu pai, não aguentando mais ver sua mãe sofrendo.</p>
-<p>Com a ajuda da deusa Atena, Odisseu finalmente consegue retornar disfarçado. Ao chegar, testa a lealdade de seus aliados, revela sua identidade e derrota os pretendentes que ocupavam seu palácio. No fim, reencontra Penélope e recupera seu reino.</p>
-<p>Recentemente, em 16 julho de 2026, teve seu lançamento nos cinemas brasileiros com um filme de aproximadamente 2 horas e 50 minutos.</p>
-<p>É um dos necessários de ter em sua estante se quer começar a entrar no mundo dos clássicos.</p>
-<button>ゴᯓ★ <span>0</span></button>
-</div>
-</main>
+<body>
+    <header>
+        <h1>Literatura Homérica</h1>
+    </header>
+
+    <main>
+        <article>
+            <img src="Aquiles1.jpeg" alt="imagem de Aquiles">
+            <div>
+                <h2 class="autor">Íliada</h2>
+                <p class="autor">por: Kauan Maria</p>
+                <p>Um dos mais clássicos livros da história, atribuído a Homero, Ilíada é um dos primeiros e mais
+                    importantes poemas épicos já escritos. A obra é cheia de batalhas, heróis, deuses e conflitos, sendo
+                    uma das principais histórias relacionadas à Guerra de Troia.
+                </p>
+                <p>A história acompanha principalmente Aquiles, um dos maiores guerreiros gregos, durante os
+                    acontecimentos finais da Guerra de Troia. Apesar de ser extremamente habilidoso e quase invencível,
+                    Aquiles é conhecido por seu orgulho e por sua personalidade explosiva.</p>
+                <p>Tudo começa quando Aquiles entra em conflito com Agamêmnon, líder dos gregos, depois que ele toma
+                    Briseida, uma mulher que havia sido entregue ao herói como prêmio. Sentindo-se desrespeitado,
+                    Aquiles decide abandonar a batalha, deixando os gregos em uma situação cada vez mais difícil.</p>
+                <p>Enquanto Aquiles permanece afastado, os troianos começam a ganhar vantagem, liderados por Heitor,
+                    príncipe de Troia e um dos principais guerreiros da guerra. Diferente de Aquiles, Heitor é
+                    apresentado como alguém muito ligado à sua família e à sua cidade, tornando o conflito entre os dois
+                    ainda mais interessante.</p>
+                <p>Tentando ajudar os gregos, Pátroclo, amigo de Aquiles, entra na batalha usando a armadura do herói.
+                    Porém, ele acaba sendo morto por Heitor. A morte de seu amigo faz Aquiles abandonar sua raiva contra
+                    Agamêmnon e voltar para a guerra em busca de vingança.</p>
+                <p>Aquiles finalmente enfrenta Heitor e consegue derrotá-lo. Depois disso, porém, ele passa a
+                    desrespeitar o corpo do inimigo, mostrando o quanto sua raiva e seu desejo de vingança o dominavam.
+                    Mesmo sendo um grande herói, Aquiles também possui falhas que acabam trazendo consequências para ele
+                    e para outras pessoas.</p>
+                <p>Um dos momentos mais marcantes acontece quando Príamo, pai de Heitor e rei de Troia, vai até Aquiles
+                    para pedir o corpo de seu filho. Comovido pela situação do rei, Aquiles decide devolver o corpo.
+                    Esse momento mostra um lado mais humano do personagem e encerra a história com uma reflexão sobre a
+                    dor causada pela guerra.</p>
+                <p>É um dos livros necessários para quem quer começar a entrar no mundo dos clássicos. Apesar de ser uma
+                    obra antiga e poder parecer difícil no início, Ilíada apresenta temas como orgulho, vingança,
+                    amizade, honra e guerra que continuam atuais até hoje.</p>
+                <button class="botaoS2">ゴ★<span>0</span></button>
+                <button class="botaoS1">🧛​🕒​​<span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="Odisseu1.jpeg" alt="imagem de Odisseu">
+            <div>
+                <h2 class="autor">Odisséia</h2>
+                <p class="autor">por: Kauan Maria</p>
+                <p>Um dos mais clássicos livros da história, atribuido a Homero e sequência de "Íliada". É um dos
+                    primogênitos de seu gênero, o poema épico cheio jornadas heróicas, criaturas míticas e aventuras.
+                </p>
+                <p>Segue Odisseu, também conhecido com Ulisses, em sua jonada de volta para a ilha de Ítaca, sua terra
+                    natal, após o final da Guerra de Tróia.</p>
+                <p>Embora a guerra tenha terminado, Odisseu leva dez anos para voltar para casa. Durante a viagem,
+                    enfrenta
+                    vários desafios, como um Ciclope, a feiticeira Circe, Sereias, além de alguns monstros marinhos e
+                    tempestades enviadas por Poseidon, em busca de vingança contra Odisseu.</p>
+                <p>Ao mesmo tempo da jornada, em Ítaca, acompanhamos Penélope, esposa de Odisseu, e sua luta interna
+                    entre
+                    seguir em frente, escolhendo uns dos diversos novos pretendentes que acreditam que Odisseu está
+                    morto ou
+                    acreditar na volta dele, mesmo após de quase doze anos de sua partida para a Guerra de Tróia.</p>
+                <p>Também vemos Telêmaco, filho de Odisseu e Penélope, saindo em uma jornada para encontrar seu pai, não
+                    aguentando mais ver sua mãe sofrendo.</p>
+                <p>Com a ajuda da deusa Atena, Odisseu finalmente consegue retornar disfarçado. Ao chegar, testa a
+                    lealdade
+                    de seus aliados, revela sua identidade e derrota os pretendentes que ocupavam seu palácio. No fim,
+                    reencontra Penélope e recupera seu reino.</p>
+                <p>Recentemente, em 16 julho de 2026, teve seu lançamento nos cinemas brasileiros com um filme de
+                    aproximadamente 2 horas e 50 minutos.</p>
+                <p>É um dos necessários de ter em sua estante se quer começar a entrar no mundo dos clássicos.</p>
+                <button class="botaoS2">ゴ★<span>0</span></button>
+                <button class="botaoS1">🧛​🕒​​<span>0</span></button>
+            </div>
+        </article>
+    </main>
 </body>
+
 <script>
-const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-function botaoClicado(){
-    console.log("Clicado");
-    let texto = botao.querySelector("span");
-    texto.textContent++;
-}
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("Clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    })
 </script>
+
 </html>
