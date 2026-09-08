@@ -5,55 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada</title>
-    <style>
-        body {
-            background-color: rgba(0, 68, 132, 0.982);
-            color: #FFFFFF;
-            border: 10px solid rgba(255, 0, 0, 0.988);
-        }
-
-        header {
-            text-align: center;
-            font-size: x-large;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            font-style: italic;
-            font-weight: bolder;
-        }
-
-        main {
-            text-align: left;
-            font-size: large;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 15px;
-            overflow: auto;
-        }
-
-        img {
-            width: 600px;
-            height: auto;
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 10px;
-        }
-
-        .autor {
-            font-style: oblique;
-            font-weight: bolder;
-        }
-
-        .botaoS1 {
-            background-color: rgb(255, 220, 25);
-        }
-
-        .botaoS2 {
-            background-color: blueviolet;
-            color: white;
-        }
-    </style>
+    <title>Jornadas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -116,7 +69,7 @@
                     tempestades enviadas por Poseidon, em busca de vingança contra Odisseu.</p>
                 <p>Ao mesmo tempo da jornada, em Ítaca, acompanhamos Penélope, esposa de Odisseu, e sua luta interna
                     entre
-                    seguir em frente, escolhendo uns dos diversos novos pretendentes que acreditam que Odisseu está
+                    seguir em frente, escolhendo um dos diversos novos pretendentes que acreditam que Odisseu está
                     morto ou
                     acreditar na volta dele, mesmo após de quase doze anos de sua partida para a Guerra de Tróia.</p>
                 <p>Também vemos Telêmaco, filho de Odisseu e Penélope, saindo em uma jornada para encontrar seu pai, não
@@ -133,27 +86,7 @@
             </div>
         </article>
     </main>
+    <script src="script.js"></script>
 </body>
-
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false) {
-                texto.textContent++;
-                curtiu = true;
-            } else {
-                texto.textContent--;
-                curtiu = false;
-            }
-
-        }
-    })
-</script>
 
 </html>

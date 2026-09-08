@@ -1,0 +1,45 @@
+ body {
+     background-color: rgba(1, 110, 200, 0.982);
+     border: 10px solid rgba(255, 0, 0, 0.988);
+ }
+
+ header {
+     text-align: center;
+     font-size: x-large;
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 20px;
+     font-style: italic;
+     font-weight: bolder;
+ }
+
+ main {
+     text-align: left;
+     font-size: large;
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 15px;
+     overflow: auto;
+ }
+
+ img {
+     width: 600px;
+     height: auto;
+     float: left;
+     margin-right: 20px;
+     margin-bottom: 10px;
+ }
+
+ .autor {
+     font-style: oblique;
+     font-weight: bolder;
+ }
+
+ .botaoS1 {
+     background-color: rgb(255, 220, 25);
+ }
+
+ .botaoS2 {
+     background-color: blueviolet;
+     color: white;
+ }
